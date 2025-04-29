@@ -145,4 +145,4 @@ class OrderCreateSerializer(serializers.ModelSerializer):
             for ticket_data in tickets_data:
                 Ticket.objects.create(order=order, **ticket_data)
 
-        return order
+            return order
